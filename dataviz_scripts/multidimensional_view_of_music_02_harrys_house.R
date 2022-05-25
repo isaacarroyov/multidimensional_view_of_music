@@ -30,3 +30,5 @@ df %>%
     strip.text = element_textbox_simple(size=8, color='black', height = 0.03),
   )
 
+ggsave("./images/multidimensional_view_of_harrys_house.svg", units = "px",
+       width = 1080, height = 1080, scale = 1.5)
