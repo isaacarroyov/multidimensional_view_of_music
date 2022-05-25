@@ -4,8 +4,6 @@ library(ggplot2)
 # LOAD DATA
 df <- read.csv("./data/harrys_house_audio_features.csv")
 
-
-
 # DATA PROCESSING
 df <- df %>%
   mutate(loudness = (loudness - min(loudness))/(max(loudness) - min(loudness)),
@@ -14,14 +12,13 @@ df <- df %>%
          energy, loudness, valence, speechiness) %>%
   tidyr::pivot_longer(cols = 3:8, names_to = "audio_features", values_to = "values") %>% as.data.frame() 
 
-
 # Data Visualization
 theme_set(theme_light(base_family = "Verdana"))
 
 df %>%
   ggplot(aes(x=song_position, y = values,
              size = values, color = audio_features, 
-             label = round(values,3) )) +
+             label = paste(song_name, round(values,3)))) +
   geom_point() + 
   geom_text(size=3, color = 'black') + 
   scale_size_area(max_size = 15) + 
@@ -36,7 +33,6 @@ df %>%
     strip.text = element_blank(),
     legend.title = element_blank(),
   )
-
 
 ggsave("./images/multidimensional_view_of_harrys_house.svg", units = "px",
        width = 1080, height = 1080, scale = 1.5)
