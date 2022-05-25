@@ -1,3 +1,5 @@
 *.DS_Store
 ignore_*
 .cache
+*.svg
+*.ai
