@@ -13,12 +13,13 @@ list_energy = []
 list_loudness = []
 list_valence = []
 list_speechiness = []
+list_duration_ms = []
 
 
 client_credential_manager = SpotifyClientCredentials(client_id=clientID, client_secret=clientSecret)
 sp = spotipy.Spotify(client_credentials_manager=client_credential_manager)
 
-dict_harrys_house = sp.album_tracks('spotify:album:5r36AJ6VOJtp00oxSkBZ5h')
+dict_harrys_house = sp.album_tracks('SPOTIFY ALBUM URI')
 list_info_harrys_house_songs = dict_harrys_house['items']
 
 # Get list of names of the songs and URI
@@ -36,6 +37,7 @@ for audio_feature in list_audio_features:
     list_loudness.append(audio_feature['loudness'])
     list_valence.append(audio_feature['valence'])
     list_speechiness.append(audio_feature['speechiness'])
+    list_duration_ms.append(audio_feature['duration_ms'])
 
 # Create a dataframe an save it as csv
 df = pd.DataFrame(dict(
@@ -46,11 +48,12 @@ df = pd.DataFrame(dict(
     energy = list_energy,
     loudness = list_loudness,
     valence = list_valence,
-    speechiness = list_speechiness
-))
-df['artist'] = 'Harry Styles'
-df['album'] = "Harry's House"
+    speechiness = list_speechiness,
+    duration_ms = list_duration_ms))
 
-df.to_csv("./../data/harrys_house_audio_features.csv", index= False)
+df['artist'] = 'ARTIST NAME'
+df['album'] = "ALBUM NAME"
+
+df.to_csv("path/to/save/file.csv", index= False)
 
 print("Done")
