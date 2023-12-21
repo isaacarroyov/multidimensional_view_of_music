@@ -1,0 +1,37 @@
+---
+title: "Multidimensional View of Music: The Warning"
+format:
+  html:
+    echo: false
+    theme: journal
+    jupyter: python3    
+---
+
+```{python load-libraries}
+# = = SPOTIFY API = = #
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+# = = DATA ANALYSIS = = #
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import altair as alt
+```
+
+# Intro
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam cursus risus et efficitur. Sed quis elit eget diam pretium commodo. In rutrum nulla sit amet ligula placerat sodales. Nunc iaculis eleifend erat, quis maximus lacus volutpat ac. Sed a fermentum erat. Nunc mauris nulla, porta nec metus eu, elementum ultricies leo. Pellentesque a risus urna. Maecenas aliquet urna enim, quis elementum augue feugiat at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean feugiat id justo sit amet aliquet. Phasellus ut magna molestie, blandit quam a, dictum orci. Nam egestas dolor id leo maximus, tempor consectetur nulla scelerisque. Etiam eleifend mi sed dui pellentesque scelerisque. Etiam euismod enim ac nisl gravida, eget lacinia odio aliquet. Suspendisse feugiat mauris ac neque fringilla consequat.
+
+Nam dapibus libero quis mollis tempus. In at luctus purus. Donec sapien magna, sollicitudin a nunc quis, ullamcorper pulvinar enim. Etiam ac suscipit ex. Mauris leo erat, varius non pharetra id, tincidunt nec odio. Pellentesque aliquam blandit mauris in feugiat. Integer a sagittis mauris.
+
+# About The Warning
+
+Proin placerat, felis eget hendrerit mollis, tortor est vestibulum tellus, eget imperdiet nunc turpis non lacus. Nullam venenatis lacinia nisl pellentesque molestie. Integer tempus non odio eu tristique. Nullam ornare id dui eu sollicitudin. Pellentesque et mauris varius, molestie urna et, elementum leo. Mauris egestas nisi vitae mi vestibulum egestas. In ut sapien arcu.
+
+Cras hendrerit, massa et molestie fermentum, velit ipsum ornare nibh, non porttitor orci leo non mauris. Nullam vehicula ante quis rhoncus volutpat. Integer vulputate tincidunt ultricies. Fusce porttitor varius tortor, sed rhoncus diam lobortis sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras elementum purus at elit euismod lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sodales sapien vitae justo aliquet interdum.
+
+# The different views
+
+Quisque vestibulum ullamcorper lacus, quis pulvinar dui ultrices quis. Nulla vulputate, erat condimentum fringilla condimentum, mauris mi tincidunt urna, in scelerisque felis ligula eget urna. Aenean et auctor purus. Nunc lacinia mollis mattis. Donec quis tortor metus. Nullam pharetra, felis non rutrum porttitor, sem diam sagittis est, eget dapibus libero neque id lectus. Nam condimentum est in nisl ultrices volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Donec posuere eu ex sed laoreet.
