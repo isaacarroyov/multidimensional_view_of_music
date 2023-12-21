@@ -1,5 +1,7 @@
 *.DS_Store
 ignored_files/
+dataviz_scripts/*_files/
+dataviz_scripts/*.html
 .cache
 *.svg
 *.ai
