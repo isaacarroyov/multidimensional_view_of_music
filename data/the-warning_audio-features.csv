@@ -1,0 +1,41 @@
+song_name,song_uri,album,artist,acousticness,danceability,energy,loudness,valence,speechiness,duration_ms
+XXI Century Blood,spotify:track:1VcLiPmina1L3xlLkJ5OTS,XXI Century Blood,The Warning,0.000857,0.547,0.957,-6.247,0.667,0.0439,237227
+Shattered Heart,spotify:track:1AASMBle7o3xOuFYciTgIj,XXI Century Blood,The Warning,0.00285,0.645,0.801,-5.995,0.452,0.0358,249680
+Survive,spotify:track:1eJbsnmix2Y3k3ymp6R5Rs,XXI Century Blood,The Warning,0.00406,0.628,0.795,-6.941,0.731,0.0282,308387
+Wildfire,spotify:track:5z8BrKpxvNqcsSQKzwYODJ,XXI Century Blood,The Warning,0.0333,0.547,0.821,-6.246,0.421,0.0409,212253
+Black Holes (Don't Hold On),spotify:track:2xRZlk8t0R2GvMQMvJ1HEB,XXI Century Blood,The Warning,0.533,0.664,0.488,-7.236,0.181,0.0285,301853
+Our Mistakes,spotify:track:1FY96pASVVaEI32SYk0HHV,XXI Century Blood,The Warning,0.0158,0.528,0.624,-6.912,0.255,0.0305,254747
+When I'm Alone,spotify:track:1LQIfQhlPw7TqSYn017trw,XXI Century Blood,The Warning,0.0166,0.674,0.816,-4.656,0.647,0.03,209027
+Runaway,spotify:track:4bcc5nd8AQOkCloGe07Qtv,XXI Century Blood,The Warning,0.00115,0.579,0.875,-5.959,0.729,0.0505,238733
+Unmendable,spotify:track:3YPWoSTTdI97QeyjV9t68F,XXI Century Blood,The Warning,0.014,0.598,0.895,-5.057,0.582,0.0377,215053
+Copper Bullets,spotify:track:2iJEEovzd80V1hl3H2xmUJ,XXI Century Blood,The Warning,0.00256,0.645,0.943,-5.35,0.432,0.0667,221453
+Show Me the Light,spotify:track:0LdkRYiS3semGItm03H3gm,XXI Century Blood,The Warning,0.462,0.565,0.395,-7.737,0.158,0.029,268667
+Exterminated - Live Session,spotify:track:1ulNyubwfadZFZkAScTnx7,XXI Century Blood,The Warning,0.0509,0.55,0.872,-6.137,0.525,0.0393,204320
+River's Soul - Live Session,spotify:track:22fM8a5JGcAcMHl82bRZOY,XXI Century Blood,The Warning,0.0178,0.504,0.768,-5.571,0.217,0.0425,254173
+Dust to Dust,spotify:track:3byoK5Yi2YT9Gcc4xS8qKE,Queen of the Murder Scene,The Warning,0.000423,0.513,0.798,-4.601,0.508,0.0675,223560
+Crimson Queen,spotify:track:0uN8gOfqmdC4QZuCoVLI8G,Queen of the Murder Scene,The Warning,0.291,0.516,0.166,-11.26,0.144,0.0313,250453
+Ugh,spotify:track:6LZj44LIoPChkWVxqjobso,Queen of the Murder Scene,The Warning,0.000338,0.584,0.885,-4.882,0.536,0.0428,258187
+The One,spotify:track:62w3LeX5YDzqztqQK2Wel5,Queen of the Murder Scene,The Warning,0.0014,0.599,0.773,-6.195,0.261,0.0327,258333
+Stalker,spotify:track:1ZqoS9fhMJmCh9DUsAM6Cz,Queen of the Murder Scene,The Warning,0.00432,0.48,0.904,-5.825,0.0912,0.0585,267787
+Red Hands Never Fade,spotify:track:304FY9ixyzX8aVW9k6Z3yK,Queen of the Murder Scene,The Warning,0.000718,0.571,0.804,-5.069,0.632,0.0618,207827
+The Sacrifice,spotify:track:3fpUpv6TUZItdoYfiNO2aM,Queen of the Murder Scene,The Warning,0.00181,0.595,0.855,-5.465,0.471,0.0354,256787
+Sinister Smiles,spotify:track:5v4enXkyiFKtMWqWxPs503,Queen of the Murder Scene,The Warning,0.0066,0.668,0.769,-4.611,0.648,0.0363,255520
+Dull Knives (Cut Better),spotify:track:17qrNfLq2XLWTlXO7jn4p7,Queen of the Murder Scene,The Warning,0.00251,0.549,0.902,-5.162,0.415,0.0847,187320
+Queen of the Murder Scene,spotify:track:7HngxvXTrk1leMvF8QNeyl,Queen of the Murder Scene,The Warning,0.000204,0.563,0.898,-4.907,0.659,0.0304,234347
+P.S.Y.C.H.O.T.I.C.,spotify:track:0wRHqRHUXgoOXe6H6XS1sJ,Queen of the Murder Scene,The Warning,0.00326,0.562,0.902,-4.528,0.694,0.0586,219627
+Hunter,spotify:track:5rqqZSzViqrpV0asKAJ5Gv,Queen of the Murder Scene,The Warning,4.16e-05,0.597,0.844,-4.944,0.602,0.0279,224653
+The End (Stars Always Seem to Fade),spotify:track:34UQ1XrP5vut9fCgl76H8g,Queen of the Murder Scene,The Warning,0.0156,0.292,0.522,-6.073,0.173,0.0357,233133
+Intro 404,spotify:track:5vFhsnsmuEDzkY5hHBwZAP,ERROR,The Warning,0.895,0.124,0.0894,-27.526,0.0633,0.041,56750
+DISCIPLE,spotify:track:5wvsoPecGLpTFCFg8qhM2a,ERROR,The Warning,0.000763,0.473,0.887,-4.598,0.381,0.0656,220056
+CHOKE,spotify:track:1GQv9r0tn00ZfHTw92jAcW,ERROR,The Warning,8.65e-05,0.37,0.832,-4.857,0.319,0.041,231855
+ANIMOSITY,spotify:track:3If1A3kmA96TVgxwuAZDB2,ERROR,The Warning,0.00027,0.467,0.904,-4.546,0.553,0.0481,246405
+MONEY,spotify:track:3ttIVj1N3d6hV8t0UL2Mjo,ERROR,The Warning,0.000677,0.642,0.812,-4.742,0.654,0.0311,194896
+AMOUR,spotify:track:7tgH5rFMIMTfNaycKeMbDb,ERROR,The Warning,0.00243,0.601,0.802,-5.513,0.73,0.0439,234708
+EVOLVE,spotify:track:2uzluI26zEowYnMqhyr0BY,ERROR,The Warning,2.66e-05,0.446,0.93,-5.758,0.421,0.0635,213309
+ERROR,spotify:track:5On0z2PZjPf5x7eB2afLEf,ERROR,The Warning,4.62e-05,0.407,0.904,-4.856,0.291,0.101,237480
+Z,spotify:track:4L8rZacefAFsbYBI6iqQgz,ERROR,The Warning,0.000216,0.5,0.899,-4.552,0.695,0.0669,182618
+23,spotify:track:4WzGpAiyqaJ22ISlx9FDT3,ERROR,The Warning,0.00307,0.461,0.855,-5.288,0.421,0.0623,240275
+KOOL AID KIDS,spotify:track:3tLxVjikY8WNipxugdxHjQ,ERROR,The Warning,0.000415,0.637,0.707,-5.844,0.355,0.0268,202519
+REVENANT,spotify:track:4l7Az0gNNvvBiEbSKnFIVp,ERROR,The Warning,0.822,0.54,0.269,-11.392,0.126,0.0309,261656
+MARTIRIO,spotify:track:6tY081OYjkobXsedh6N8op,ERROR,The Warning,5.36e-05,0.551,0.831,-4.436,0.275,0.0305,244231
+Breathe - Bonus Track,spotify:track:0qDKy4Rj8Wtp5KXnM157nd,ERROR,The Warning,0.987,0.322,0.254,-11.369,0.0815,0.0337,169000
