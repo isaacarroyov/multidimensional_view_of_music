@@ -8,16 +8,90 @@ format:
 ---
 
 ```{python load-libraries}
-# = = SPOTIFY API = = #
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-
 # = = DATA ANALYSIS = = #
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import altair as alt
+```
+
+```{python load_info_albums}
+#| eval: false
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+dict_album_uri = {
+  "XXI Century Blood": "spotify:album:6nEiN0eM1gbvDsijV46XrX",
+  "Queen of the Murder Scene": "spotify:album:2kB1Qqw3YOR9i3nbNxXWRs",
+  "ERROR": "spotify:album:0el7KHRPZwYXPwXNeSNdJB"
+}
+
+data_client = pd.read_csv("./../ignored_files/id_secret.csv")
+
+clientID = data_client.loc[0, 'client_id']
+clientSecret = data_client.loc[0,'client_secret']
+
+client_credential_manager = SpotifyClientCredentials(client_id=clientID, client_secret=clientSecret)
+sp = spotipy.Spotify(client_credentials_manager=client_credential_manager)
+
+# = = GET INFO = = #
+list_dfs =  list()
+
+# - - Iterar por album - - #
+for album in dict_album_uri:
+
+    dict_data_album = {
+        "song_name": list(),
+        "song_uri": list(),
+        "album": list(),
+        "artist": list(),
+        "acousticness": list(),
+        "danceability": list(),
+        "energy": list(),
+        "loudness": list(),
+        "valence": list(),
+        "speechiness": list(),
+        "duration_ms": list()
+    }
+
+    # ~ ~ Obtener el URI ~ ~ #
+    album_uri = dict_album_uri[album]
+    
+    # ~ ~ Se pide info del album ~ ~ #
+    dict_info_album = sp.album_tracks(album_uri)
+
+    # ~ ~ Extraer las canciones del album ~ ~ #
+    list_songs_album = dict_info_album['items']
+    
+    # - - Guardar información de las canciones (Nombre y URI) - - #
+    for song in list_songs_album:
+        # ~ ~ Nombre ~ ~ #
+        dict_data_album['song_name'].append(song['name'])
+        # ~ ~ URI ~ ~ #
+        dict_data_album['song_uri'].append(song['uri'])
+
+    # - - Petición de Audio Features - - #
+    list_audio_features = sp.audio_features(tracks=dict_data_album['song_uri'])
+    
+    # - - Iterar por Audio Features - - #
+    for af in list_audio_features:
+      dict_data_album["acousticness"].append(af['acousticness'])
+      dict_data_album["danceability"].append(af['danceability'])
+      dict_data_album["energy"].append(af['energy'])
+      dict_data_album["loudness"].append(af['loudness'])
+      dict_data_album["valence"].append(af['valence'])
+      dict_data_album["speechiness"].append(af['speechiness'])
+      dict_data_album["duration_ms"].append(af['duration_ms'])
+      dict_data_album["album"].append(album)
+      dict_data_album["artist"].append("The Warning")
+    
+    # - - Guardar en lista de DataFrams - - #
+    list_dfs.append(pd.DataFrame(dict_data_album))
+      
+all_data_mdvm_spotify = pd.concat(list_dfs).reset_index(drop = True)
+all_data_mdvm_spotify.to_csv("./../data/the-warning_audio-features.csv", index = False)
+
 ```
 
 # Intro
