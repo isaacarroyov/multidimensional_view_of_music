@@ -1,8 +1,10 @@
 ---
 title: "Multidimensional View of Music: The Warning"
+lang: "es"
 format:
   html:
     echo: false
+    toc: true
     theme: journal
     jupyter: python3    
 ---
